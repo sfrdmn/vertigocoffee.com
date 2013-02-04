@@ -30,6 +30,15 @@ footer {
   float: right;
 }
 
+.hero {
+  clear: both;
+  background: red;
+  min-height: 384px;
+  height:auto !important;
+  height: 384px;
+  background: transparent url(../img/mission.jpg) 50% 50%;
+}
+
 .logo {
   text-indent: 100%;
   white-space: nowrap;
