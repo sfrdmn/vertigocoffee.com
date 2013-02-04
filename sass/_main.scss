@@ -4,7 +4,7 @@ body {
 }
 
 body, input, textarea, select {
-  font-family: "American Typewriter";
+  font-family: Arvo, "American Typewriter";
 }
 
 .container {
@@ -14,6 +14,12 @@ body, input, textarea, select {
 
 header {
   text-align: center;
+}
+
+footer {
+  padding: 3em 0;
+  background: $text-color;
+  color: $bg-color;
 }
 
 .address {
