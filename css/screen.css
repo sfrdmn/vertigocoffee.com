@@ -522,6 +522,11 @@ textarea {
     page-break-after: avoid;
   }
 }
+/* line 1, ../sass/_helpers.scss */
+.hide {
+  display: none;
+}
+
 /* line 1, ../sass/_main.scss */
 body {
   background: #e7e4df;
@@ -531,4 +536,52 @@ body {
 /* line 6, ../sass/_main.scss */
 body, input, textarea, select {
   font-family: "American Typewriter";
+}
+
+/* line 10, ../sass/_main.scss */
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* line 15, ../sass/_main.scss */
+header {
+  text-align: center;
+}
+
+/* line 19, ../sass/_main.scss */
+.address {
+  float: left;
+}
+
+/* line 23, ../sass/_main.scss */
+.hours {
+  float: right;
+}
+
+/* line 27, ../sass/_main.scss */
+.logo {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: transparent url(/img/logo.png) 50% 50%;
+  width: 92px;
+  height: 92px;
+  margin: 32px auto;
+}
+
+/* line 39, ../sass/_main.scss */
+a,
+a:link,
+a:visited {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* line 46, ../sass/_main.scss */
+a:hover,
+a:active,
+a:focus {
+  color: #000;
+  text-decoration: underline;
 }

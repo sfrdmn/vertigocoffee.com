@@ -6,3 +6,44 @@ body {
 body, input, textarea, select {
   font-family: "American Typewriter";
 }
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+}
+
+.address {
+  float: left;
+}
+
+.hours {
+  float: right;
+}
+
+.logo {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: transparent url(/img/logo.png) 50% 50%;
+  width: 92px;
+  height: 92px;
+  margin: 32px auto;
+}
+
+a,
+a:link,
+a:visited {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #000;
+  text-decoration: underline;
+}
