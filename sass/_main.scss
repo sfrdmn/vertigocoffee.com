@@ -13,6 +13,8 @@ body, input, textarea, select {
 }
 
 header {
+  position: relative;
+  top: 0;
   text-align: center;
 }
 
@@ -48,6 +50,15 @@ footer .container {
   height:auto !important;
   height: 384px;
   background: transparent url(../img/mission.jpg) 50% 50%;
+}
+
+.fb-like {
+  float: right;
+  vertical-align: top;
+}
+
+.vcard {
+  display: inline-block;
 }
 
 .logo {
