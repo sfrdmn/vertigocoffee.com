@@ -1,5 +1,6 @@
 import os
 import sys
+from secret import db_info, django_options
 
 gettext = lambda s: s
 PROJECT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -18,13 +19,13 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'vertigo_dev',                      # Or path to database file if using sqlite3.
+        'ENGINE': db_info['engine'], # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': db_info['name'],                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': 'sean',
-        'PASSWORD': '',
-        'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-        'PORT': '',                      # Set to empty string for default.
+        'USER': db_info['user'],
+        'PASSWORD': db_info['password'],
+        'HOST': db_info['host'],                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'PORT': db_info['port'],                      # Set to empty string for default.
     }
 }
 
@@ -57,7 +58,7 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
-MEDIA_ROOT = os.path.join(PROJECT_DIR, 'public_html/media/')
+MEDIA_ROOT = os.path.join(PROJECT_DIR, 'media/')
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -68,7 +69,7 @@ MEDIA_URL = '/media/'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'public_html/static/')
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static/')
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -90,7 +91,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'l2h41m=)ccsyl$ri=&64og_n)+_!86f8qlma4z$c*9y%*em)s2'
+SECRET_KEY = django_options['secret_key']
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
