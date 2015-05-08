@@ -1,9 +1,4 @@
 *.swp
-*.pyc
-.sass-cache/
-css/
-secret.py
-static/
-media/
 .htaccess
 *.fcgi
+.DS_Store

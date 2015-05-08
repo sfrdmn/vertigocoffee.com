@@ -1,0 +1,224 @@
+html {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+::-moz-selection {
+    background: #00F;
+    text-shadow: none;
+}
+
+::selection {
+    background: #00F;
+    text-shadow: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* User Styles */
+
+html, body, .container {
+  width: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+}
+
+.container {
+  background-color: #FFF;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a .text {
+  display: inline-block;
+  margin-top: -2px;
+  border-bottom: 2px solid #222;
+}
+
+a:hover .text {
+  margin-top: -3px;
+  border-bottom: 3px solid #000;
+}
+
+a:visited: {
+  color: #00F;
+}
+
+abbr[title] {
+  border: none;
+}
+
+ul {
+  margin: 0;
+  display: block;
+  padding: 0;
+  list-style: none;
+}
+
+.container > * {
+  margin: 0 auto;
+  margin-top: 3em;
+  width: 90%;
+}
+
+section.main > * {
+  margin-top: 3em;
+}
+
+section.main > *:first-child {
+  margin-top: 0;
+}
+
+.logo {
+  background-image: url(../img/vertigo-logo@2x.png);
+  background-size: 275px 180px;
+  width: 275px;
+  height: 180px;
+  margin: 0 auto;
+}
+
+.container .icon {
+  margin-right: 0.75em;
+}
+
+.location a > * {
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.phone {
+  display: inline-block;
+  height: 40px;
+}
+
+.phone a > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.vcard .fn:after,
+.vcard .street-address:after {
+  content: '\000A';
+  white-space: pre; 
+}
+
+.logo {
+  background-image: url(../img/vertigo-logo@2x.png);
+  background-size: 275px 180px;
+  width: 275px;
+  height: 180px;
+  margin: 0 auto;
+}
+
+.social-links {
+}
+
+.social-links li {
+  height: 40px;
+  margin-right: 1em;
+  display: inline-block;
+}
+
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.social-links li div {
+  vertical-align: middle;
+}
+
+.icon {
+  display: inline-block;
+  background-size: 40px 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-pin {
+  background-image: url(../img/icon-pin@2x.png);
+}
+
+.icon-facebook {
+  background-image: url(../img/icon-facebook@2x.png);
+}
+
+.icon-instagram {
+  background-image: url(../img/icon-instagram@2x.png);
+}
+
+.icon-phone {
+  background-image: url(../img/icon-phone@2x.png);
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: #faf9f5;
+  }
+
+  .container {
+    position: relative;
+    top: 0;
+    padding: 2em;
+    max-width: 600px;
+    border: 2px solid #000;
+    margin: 2em auto;
+  }
+
+  .container > * {
+    width: 90%;
+  }
+
+  .container > *:first-child {
+    margin-top: 0;
+  }
+
+  .section.main {
+    width: 49%;
+  }
+
+  .logo {
+    background-image: url(../img/vertigo-logo.png);
+  }
+
+  .icon-pin {
+    background-image: url(../img/icon-pin.png);
+  }
+
+  .icon-facebook {
+    background-image: url(../img/icon-facebook.png);
+  }
+
+  .icon-instagram {
+    background-image: url(../img/icon-instagram.png);
+  }
+
+  .icon-phone {
+    background-image: url(../img/icon-phone.png);
+  }
+}
